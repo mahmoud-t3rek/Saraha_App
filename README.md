@@ -1,12 +1,17 @@
-# Saraha-like API
+# Saraha-like API 🎭
 
 A backend API similar to the **Saraha** app, built with **Express**, **Mongoose**, **Joi**, **Multer**, **bcrypt**, **Resend** (for email confirmation), and rate limiting.  
 Includes **error handling**, **password hashing**, **secure validation**, and **email confirmation**.
 
 ---
 
+## 🚀 Live Deployment
+🔗 [Production URL on Vercel](https://saraha-app-zeta.vercel.app/)
+
+---
+
 ## 📌 Features
-- User registration & login with **hashed passwords**.
+- User **registration & login** with hashed passwords.
 - **Email confirmation** after registration (via **Resend API**).
 - Send & receive **anonymous messages**.
 - **Input validation** using Joi.
@@ -24,6 +29,7 @@ Includes **error handling**, **password hashing**, **secure validation**, and **
 - **bcrypt** (password hashing)
 - **Express Rate Limit**
 - **Resend** (email sending & confirmation)
+- **Vercel** (deployment)
 
 ---
 
