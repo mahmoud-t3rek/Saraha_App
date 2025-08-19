@@ -11,12 +11,14 @@ import {OAuth2Client} from "google-auth-library"
 
 //===================signUp================================
 export const signUp=async(req,res,next)=>{
-const {name,email,password,phone,age,Role}=req.body;
+const {name,email,password,cpassword,phone,age,Role}=req.body;
 if(!req?.file){
-  throw new Error("file is requirad",{cause:400})
+  throw new Error("file is requirad",{cause:400})      
 }
 
 const finduser=await userModel.findOne({email});
+console.log(finduser);
+
 if(finduser){
     throw new Error("Email is already Exist!",{cause:409});
 }

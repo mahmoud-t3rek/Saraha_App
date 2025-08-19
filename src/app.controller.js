@@ -23,6 +23,10 @@ const bootstrap=(app,express)=>{
     app.use(express.json())
     
     connectionDB()
+
+  app.get("/", (req, res) => {
+  res.send("Welcome to app..............✌️💙");
+});
     app.use("/uploads",express.static("uploads"))
     app.use("/users",userRouter)
     app.use("/Message",MessageRouter)
