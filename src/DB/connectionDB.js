@@ -8,4 +8,4 @@ const connectionDB=()=>{
     })
 }
 
-export default connectionDB      
+export default connectionDB         
